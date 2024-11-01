@@ -1,0 +1,28 @@
+{
+	"name": "@navithecoderboi/libx",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"license": "MIT",
+	"main": "./dist/index.js",
+	"author": {
+		"name": "NaviTheCoderboi",
+		"url": "https://github.com/NaviTheCoderboi"
+	},
+	"bin": {
+		"libx": "./dist/cli.js"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
+	"dependencies": {
+		"chokidar": "^4.0.1",
+		"esbuild": "^0.23.1",
+		"globby": "^14.0.2",
+		"typescript": "^5.6.3"
+	}
+}
